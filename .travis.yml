@@ -5,3 +5,6 @@ services:
 
 before_install:
   docker build -t myimage -f Dockerfile.dev.
+
+scripts:
+  docker run rajnishcoder/frontend npm run test -- --coverage
